@@ -52,17 +52,17 @@ export default function AboutPage() {
                 <Card title="My Story">
                     <div className="space-y-4 text-blue-200">
                         <p>
-                            Hi! I'm a full-stack developer with over 5 years of experience building web applications 
-                            and teaching programming. My journey started with a simple "Hello World" program, and 
-                            I've been passionate about code ever since.
+                            Hi! I&apos;m a full-stack developer with over 5 years of experience building web applications 
+                            and teaching programming. My journey started with a simple &quot;Hello World&quot; program, and 
+                            I&apos;ve been passionate about code ever since.
                         </p>
                         <p>
                             After working at several tech companies and teaching at coding bootcamps, I realized 
-                            my true calling was helping others master technology. Whether you're a complete beginner 
-                            or looking to advance your career, I'm here to guide you every step of the way.
+                            my true calling was helping others master technology. Whether you&apos;re a complete beginner 
+                            or looking to advance your career, I&apos;m here to guide you every step of the way.
                         </p>
                         <p>
-                            When I'm not coding or teaching, you'll find me contributing to open source projects, 
+                            When I&apos;m not coding or teaching, you&apos;ll find me contributing to open source projects, 
                             writing technical blogs, or exploring the latest web technologies.
                         </p>
                     </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="font-semibold mb-2">Practical Focus</h3>
                             <p className="text-sm text-blue-200">
-                                Focus on skills and technologies that are in demand in today's job market.
+                                Focus on skills and technologies that are in demand in today&apos;s job market.
                             </p>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             <section className="text-center py-12 bg-blue-800 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Ready to Start Learning?</h2>
                 <p className="mb-6 text-blue-200">
-                    Let's discuss your goals and create a personalized learning plan for you.
+                    Let&apos;s discuss your goals and create a personalized learning plan for you.
                 </p>
                 <Link href="/booking" className="btn btn-lg bg-white text-blue-900 hover:bg-blue-50">
                     Schedule a Free Consultation

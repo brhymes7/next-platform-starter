@@ -86,7 +86,7 @@ export default function ServicesPage() {
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="font-semibold mb-3">What's Included</h4>
+                                <h4 className="font-semibold mb-3">What&apos;s Included</h4>
                                 <ul className="space-y-2">
                                     {tutoring.includes.map((item, i) => (
                                         <li key={i} className="flex items-center text-sm">
@@ -124,7 +124,7 @@ export default function ServicesPage() {
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="font-semibold mb-3">What's Included</h4>
+                                <h4 className="font-semibold mb-3">What&apos;s Included</h4>
                                 <ul className="space-y-2">
                                     {webDesign.includes.map((item, i) => (
                                         <li key={i} className="flex items-center text-sm">

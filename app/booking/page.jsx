@@ -39,8 +39,8 @@ export default function BookingPage() {
                         </div>
                         <h2 className="text-2xl font-bold">Thank you, {formData.name}!</h2>
                         <p className="text-blue-200">
-                            We've received your booking request for {formData.service.toLowerCase()}. 
-                            We'll contact you within 24 hours to confirm your session.
+                            We&apos;ve received your booking request for {formData.service.toLowerCase()}. 
+                            We&apos;ll contact you within 24 hours to confirm your session.
                         </p>
                         <button 
                             onClick={() => setIsSubmitted(false)}
@@ -59,7 +59,7 @@ export default function BookingPage() {
             <section className="text-center">
                 <h1 className="mb-4 text-4xl font-bold">Book a Session</h1>
                 <p className="text-xl text-blue-200">
-                    Ready to start learning or build your website? Let's schedule a time to connect.
+                    Ready to start learning or build your website? Let&apos;s schedule a time to connect.
                 </p>
             </section>
 
@@ -156,7 +156,7 @@ export default function BookingPage() {
             </Card>
 
             <div className="text-center text-sm text-gray-600 dark:text-gray-400">
-                <p>We'll respond within 24 hours to confirm your session.</p>
+                <p>We&apos;ll respond within 24 hours to confirm your session.</p>
                 <p>Have questions? Email us at <a href="mailto:hello@techtutorpro.com" className="text-blue-600 dark:text-blue-400 hover:underline">hello@techtutorpro.com</a></p>
             </div>
         </div>
