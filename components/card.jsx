@@ -5,9 +5,9 @@ export function Card({ title, children, className }) {
             className
         ].filter(Boolean).join(' ')}>
             <div className="absolute inset-0 bg-gradient-to-br from-blue-800/15 via-transparent to-black/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative flex flex-col gap-6 p-8">
+            <div className="relative flex flex-col gap-4 sm:gap-6 p-4 sm:p-6 md:p-8">
                 {title && (
-                    <h3 className="text-2xl font-bold text-black dark:text-white group-hover:bg-gradient-to-r group-hover:from-blue-800 group-hover:to-black group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                    <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white group-hover:bg-gradient-to-r group-hover:from-blue-800 group-hover:to-black group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                         {title}
                     </h3>
                 )}
