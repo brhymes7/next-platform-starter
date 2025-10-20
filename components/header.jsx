@@ -1,42 +1,44 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import netlifyLogo from 'public/netlify-logo.svg';
-import githubLogo from 'public/images/github-mark-white.svg';
+import { ThemeToggle } from './theme-toggle';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
+    { linkText: 'Services', href: '/services' },
+    { linkText: 'About', href: '/about' },
+    { linkText: 'Book Now', href: '/booking' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
-            </Link>
-            {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+        <header className="sticky top-0 z-50 glass border-b border-white/20 dark:border-white/10">
+            <nav className="flex items-center justify-between py-6">
+                <Link href="/" className="text-3xl font-black bg-gradient-to-r from-blue-800 via-black to-blue-900 bg-clip-text text-transparent animate-float">
+                    TechTutor Pro
+                </Link>
+                
+                <div className="hidden md:flex items-center space-x-10">
                     {navItems.map((item, index) => (
-                        <li key={index}>
-                            <Link href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2">
-                                {item.linkText}
-                            </Link>
-                        </li>
+                        <Link
+                            key={index}
+                            href={item.href}
+                            className="relative text-gray-900 dark:text-gray-100 hover:text-blue-800 dark:hover:text-blue-200 font-semibold transition-all duration-300 group"
+                        >
+                            {item.linkText}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-800 to-black transition-all duration-300 group-hover:w-full"></span>
+                        </Link>
                     ))}
-                </ul>
-            )}
-            <Link
-                href="https://github.com/netlify-templates/next-platform-starter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden lg:inline-flex lg:ml-auto"
-            >
-                <Image src={githubLogo} alt="GitHub logo" className="w-7" />
-            </Link>
-        </nav>
+                </div>
+
+                <div className="flex items-center gap-4">
+                    <ThemeToggle />
+                    <Link
+                        href="/booking"
+                        className="btn btn-primary btn-lg hidden sm:inline-flex animate-glow"
+                    >
+                        Get Started
+                    </Link>
+                </div>
+            </nav>
+        </header>
     );
 }
